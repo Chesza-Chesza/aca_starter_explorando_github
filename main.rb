@@ -144,8 +144,8 @@ class Main
     # TODO: Convertir cada hash de la respuesta en un objeto de clase Member. Modifique la siguiente instruccion, 2 lineas más abajo
     # HINT: Fíjese bien en qué tipo de respuesta devuelve el metodo requestCostaRicaG47Members, parece un array, ¿o no?
     @members = response # XXX <------------- modificar acá
+
     # TODO: En la siguiente linea hay mucha información, cambiela para que muestre *solamente* el nombre del usuario
-    # @utils.viewArray(response) # XXX <---------- modificar acá
     @utils.viewArray(response) # XXX <---------- modificar acá
 
     puts
@@ -159,7 +159,9 @@ class Main
     member = @members[0] # XXX <----------------- modificar acá
     puts member
     puts
+    puts ">>> Presione enter para continuar"
     gets
+    puts "Continuando..."
     # PARA CRANEAR: A veces es muy largo el nombre de usuario, y uno puede cometer errores. ¿Cómo se puede hacer
     # para que el programa sea más robusto? Cómo se puede hacer para pedirle al usuario el número de la lista
     # y sacar el usuario así? Mejora lo suficientemente la experiencia de usuario para implementarlo? Hay alguna alternativa mejor?

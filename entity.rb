@@ -21,7 +21,9 @@ class Entity
       file.puts '    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">'
       file.puts '  </head>'
       file.puts '  <body>'
+      file.puts '    <div class="container">'
       file.puts html_string
+      file.puts '    </div>'
       file.puts '  </body>'
       file.puts '</html>'
     end
